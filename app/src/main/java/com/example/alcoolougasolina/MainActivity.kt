@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Switch
 import android.widget.TextView
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     var percentual:Double = 0.7
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             val switchStatus: Boolean = switchButton.isChecked()
 
             val resultado: TextView = findViewById(R.id.resultado)
+            val locale: Locale = resources.configuration.locales.get(0)
 
             if(switchStatus) {
                 percentual = 0.75
@@ -50,13 +52,24 @@ class MainActivity : AppCompatActivity() {
             var calc:Double = valorGasolina * percentual
             Log.d("PDM23","calculo, $valorAlcool, $calc")
 
-            if(valorAlcool > calc) {
-                resultado.setText("Gasolina é mais rentável")
-            } else if(valorAlcool < calc) {
-                resultado.setText("Álcool é mais rentável")
-            }
-            else{
-                resultado.setText("Álcool é mais rentável")
+            if (valorAlcool > calc) {
+                resultado.text = if (locale.language == "pt") {
+                    "Gasolina é mais rentável"
+                } else {
+                    "Gasoline is more cost-effective"
+                }
+            } else if (valorAlcool < calc) {
+                resultado.text = if (locale.language == "pt") {
+                    "Álcool é mais rentável"
+                } else {
+                    "Alcohol is more cost-effective"
+                }
+            } else {
+                resultado.text = if (locale.language == "pt") {
+                    "Álcool é mais rentável"
+                } else {
+                    "Alcohol is more cost-effective"
+                }
             }
 
             Log.d("PDM23","Valor Alcool, $valorAlcool")

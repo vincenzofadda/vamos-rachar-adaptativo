@@ -32,9 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:text="Gasolina ou Álcool?"
+            android:text="@string/titulo"
             android:textAlignment="center"
-            android:textColor="#104517"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -44,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="Valor Gasolina:"
+            android:hint="@string/valor_gasolina"
             android:inputType="numberDecimal"
             android:textAlignment="center" />
 
@@ -53,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Valor Álcool:"
+            android:hint="@string/valor_alcool"
             android:inputType="numberDecimal"
             android:textAlignment="center" />
 
@@ -64,7 +63,7 @@
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
             android:switchMinWidth="50dp"
-            android:text="75%"
+            android:text="@string/percent"
             android:textAlignment="textEnd"
             android:textSize="30dp" />
 
@@ -82,7 +81,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
             android:backgroundTint="#E34275"
-            android:text="Calcular" />
+            android:text="@string/calcular" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Álcool ou gasolina?</string>
+    <string name="titulo">Gasolina ou Álcool?</string>
+    <string name="valor_gasolina">Valor Gasolina:</string>
+    <string name="valor_alcool">Valor Álcool:</string>
+    <string name="percent">75%</string>
+    <string name="calcular">Calcular</string>
 </resources>

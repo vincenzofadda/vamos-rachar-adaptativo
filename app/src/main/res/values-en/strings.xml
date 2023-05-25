@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alcohol or gasoline?</string>
+    <string name="titulo">Gasoline or alcohol?</string>
+    <string name="valor_gasolina">Gas price:</string>
+    <string name="valor_alcool">Alcohol price:</string>
+    <string name="percent">75%</string>
+    <string name="calcular">Calculate</string>
+</resources>
